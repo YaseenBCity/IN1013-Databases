@@ -10,12 +10,12 @@ VALUES ('Fluffy', '2020-10-15', 'vet', 'antibiotics');
 INSERT INTO petPet( petName, owner, species, gender, birth, death)
 VALUES ('Hammy', 'Diane', 'hamster','M','2010-10-30',NULL );
 
-INSERT INTO petEVent( petName, eventdate, eventtype, remark)
+INSERT INTO petEvent( petName, eventdate, eventtype, remark)
 VALUES ('Hammy','2020-10-15','vet','antibiotics');
 
 UPDATE petEvent
 SET remark ='5 kittens, 2 male, 3 female'
-WHERE petName ='Fluffy';
+WHERE petName ='Fluffy' AND eventtype='litter';
 
 UPDATE petEvent
 SET petName = 'Claws'
