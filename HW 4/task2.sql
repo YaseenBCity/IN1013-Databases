@@ -1,9 +1,3 @@
-ALTER TABLE petPet
-ADD PRIMARY KEY (petName);
-
-ALTER TABLE petEvent
-ADD FOREIGN KEY (petName) REFERENCES petPet(petName);
-
 INSERT INTO petEvent( petName, eventdate, eventtype, remark)
 VALUES ('Fluffy', '2020-10-15', 'vet', 'antibiotics');
 

@@ -4,7 +4,9 @@ CREATE TABLE petPet (
 	species VARCHAR(45),
 	gender VARCHAR(1),
 	birth DATE,
-	death DATE
+	death DATE,
+	PRIMARY KEY (petName)
+
 );
 
 CREATE TABLE petEvent (
@@ -12,6 +14,8 @@ CREATE TABLE petEvent (
 	eventdate DATE,
 	eventtype VARCHAR(15),
 	remark VARCHAR(255),
+	FOREIGN KEY (petName) REFERENCES petPet(petName)
 );
 
 
+ 
