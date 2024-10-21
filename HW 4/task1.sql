@@ -2,7 +2,7 @@ CREATE TABLE petPet (
 	petName VARCHAR(20),
 	owner VARCHAR(45),
 	species VARCHAR(45),
-	gender VARCHAR(20),
+	gender VARCHAR(1),
 	birth DATE,
 	death DATE
 );
